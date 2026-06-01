@@ -4,13 +4,9 @@ import time
 import threading
 
 app = Flask(__name__)
-
-# ============================================================
 # HashMap in Action: sessions[token] = {"user": str, "expiry": float}
-# ============================================================
 sessions = {}  # Python dict = HashMap
 # Key: token (str), Value: {"user": str, "expiry": timestamp}
-# All operations (set, get, delete) are O(1) average time complexity
 
 def clean_expired():
     """Background thread that removes expired sessions every 60 seconds."""
