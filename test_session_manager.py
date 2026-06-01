@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Test script for the HashMap Session Manager.
 Demonstrates O(1) token validation flow.
 """
 
